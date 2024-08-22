@@ -1,0 +1,49 @@
+/* Dropdown list container */
+.dropdown-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    max-height: 200px;
+    overflow-y: auto;
+    background: white;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Dropdown item container */
+.dropdown-item {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-bottom: 1px solid #ffffff;
+}
+
+/* Alternating background colors */
+.dropdown-item:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.dropdown-item:nth-child(odd) {
+    background-color: #fffefe;
+}
+
+/* Hover effect for dropdown items */
+.dropdown-item:hover {
+    background-color: #e2e6ea;
+}
+
+/* Remove border for last item */
+.dropdown-item:last-child {
+    border-bottom: none;
+}
+.pie-chart-container {
+    width: 300px; /* Adjust width as needed */
+    height: 300px; /* Adjust height as needed */
+    margin: 0 auto; /* Center the chart horizontally */
+}
